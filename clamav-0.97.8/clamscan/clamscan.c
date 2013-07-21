@@ -55,7 +55,7 @@ void help(void);
 struct s_info info;
 short recursion = 0, printinfected = 0, bell = 0;
 
-int main(int argc, char **argv)
+int main(int argc, char **argv)	//멘토님이 말한 2개의 큰 함수중 하나 scan fucntion
 {
 	int ds, dms, ret;
 	double mb, rmb;
@@ -74,7 +74,7 @@ int main(int argc, char **argv)
     sigaddset(&sigset, SIGXFSZ);
     sigprocmask(SIG_SETMASK, &sigset, NULL);
 #endif
-
+//////////////////////////////////////////////////////////////////옵션 비교///////////////////////////
 
     if((opts = optparse(NULL, argc, argv, 1, OPT_CLAMSCAN, 0, NULL)) == NULL) {
 	mprintf("!Can't parse command line options\n");
@@ -104,7 +104,7 @@ int main(int argc, char **argv)
 #endif
 	cl_debug(); /* enable debug messages */
     }
-
+    
     if(optget(opts, "version")->enabled) {
 	print_version(optget(opts, "database")->strarg);
 	optfree(opts);
@@ -113,7 +113,7 @@ int main(int argc, char **argv)
 
     if(optget(opts, "help")->enabled) {
 	optfree(opts);
-    	help();
+    	help();		//옵션이 hlep일 경우 help()함수 실행
 	return 0;
     }
 
@@ -151,7 +151,7 @@ int main(int argc, char **argv)
 
     if(!optget(opts, "no-summary")->enabled) {
 	gettimeofday(&t2, NULL);
-
+//////////////출력///////////////////////
     ds = t2.tv_sec - t1.tv_sec;
 	dms = t2.tv_usec - t1.tv_usec;
 	ds -= (dms < 0) ? (1):(0);
@@ -182,7 +182,7 @@ int main(int argc, char **argv)
     return ret;
 }
 
-void help(void)
+void help(void)	//멘토님이 말한 2개의 큰 함수중 하나 Help function
 {
 
     mprintf_stdout = 1;
@@ -192,7 +192,7 @@ void help(void)
     printf("           By The ClamAV Team: http://www.clamav.net/team\n");
     printf("           (C) 2007-2009 Sourcefire, Inc.\n\n");
 
-    mprintf("    --help                -h             Print this help screen\n");
+    mprintf("    --help                -h             Print this help screen\n");		//help
     mprintf("    --version             -V             Print version number\n");
     mprintf("    --verbose             -v             Be verbose\n");
     mprintf("    --debug                              Enable libclamav's debug messages\n");
@@ -204,7 +204,7 @@ void help(void)
     mprintf("\n");
     mprintf("    --tempdir=DIRECTORY                  Create temporary files in DIRECTORY\n");
     mprintf("    --leave-temps[=yes/no(*)]            Do not remove temporary files\n");
-    mprintf("    --database=FILE/DIR   -d FILE/DIR    Load virus database from FILE or load\n");
+    mprintf("    --database=FILE/DIR   -d FILE/DIR    Load virus database from FILE or load\n");	//database
     mprintf("                                         all supported db files from DIR\n");
     mprintf("    --official-db-only[=yes/no(*)]       Only load official signatures\n");
     mprintf("    --log=FILE            -l FILE        Save scan report to FILE\n");
