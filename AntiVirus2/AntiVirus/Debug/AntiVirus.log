@@ -1,0 +1,24 @@
+﻿빌드 시작: 2013-08-25 오후 8:20:41
+     1>2 노드의 "D:\project\AntiVirus2\AntiVirus\AntiVirus.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\project\AntiVirus2\ /ID:\project\AntiVirus2\..\LibAntiVirus /ID:\project\AntiVirus2\.. /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\AntiVirus.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt AntiVirusDlg.cpp manager.cpp
+         manager.cpp
+     1>d:\project\antivirus2\antivirus\manager.cpp(10): warning C4101: 'sb' :참조되지 않은 지역 변수입니다.
+     1>d:\project\antivirus2\antivirus\manager.cpp(8): warning C4101: 'file' :참조되지 않은 지역 변수입니다.
+     1>d:\project\antivirus2\antivirus\manager.cpp(8): warning C4101: 'cwd' :참조되지 않은 지역 변수입니다.
+     1>d:\project\antivirus2\antivirus\manager.cpp(9): warning C4101: 'filename' :참조되지 않은 지역 변수입니다.
+         코드를 생성하고 있습니다...
+         건너뛰고 있습니다... (관련된 변경 내용 없음)
+         AntiVirusDlg.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\project\AntiVirus2\Debug\AntiVirus.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\project\AntiVirus2\Debug\AntiVirus.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\project\AntiVirus2\Debug\AntiVirus.lib" /MACHINE:X86 Debug\AntiVirus.res
+         Debug\AntiVirus.obj
+         Debug\AntiVirusDlg.obj
+         Debug\manager.obj
+         Debug\stdafx.obj
+         AntiVirus.vcxproj -> D:\project\AntiVirus2\Debug\AntiVirus.exe
+     1>"D:\project\AntiVirus2\AntiVirus\AntiVirus.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:09.79

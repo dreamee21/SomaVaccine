@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AntiVirus", "AntiVirus\AntiVirus.vcxproj", "{E9366F94-C680-4784-BB1D-550253C63B4D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ECD0C71E-4897-4067-BE1C-0121EA32D051} = {ECD0C71E-4897-4067-BE1C-0121EA32D051}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibAntiVirus", "LibAntiVirus\LibAntiVirus.vcxproj", "{ECD0C71E-4897-4067-BE1C-0121EA32D051}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9366F94-C680-4784-BB1D-550253C63B4D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E9366F94-C680-4784-BB1D-550253C63B4D}.Debug|Win32.Build.0 = Debug|Win32
+		{E9366F94-C680-4784-BB1D-550253C63B4D}.Release|Win32.ActiveCfg = Release|Win32
+		{E9366F94-C680-4784-BB1D-550253C63B4D}.Release|Win32.Build.0 = Release|Win32
+		{ECD0C71E-4897-4067-BE1C-0121EA32D051}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ECD0C71E-4897-4067-BE1C-0121EA32D051}.Debug|Win32.Build.0 = Debug|Win32
+		{ECD0C71E-4897-4067-BE1C-0121EA32D051}.Release|Win32.ActiveCfg = Release|Win32
+		{ECD0C71E-4897-4067-BE1C-0121EA32D051}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

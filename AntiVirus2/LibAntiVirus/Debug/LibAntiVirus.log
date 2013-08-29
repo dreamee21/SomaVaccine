@@ -1,0 +1,22 @@
+﻿빌드 시작: 2013-08-25 오후 8:20:56
+     1>2 노드의 "D:\project\AntiVirus2\LibAntiVirus\LibAntiVirus.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\LibAntiVirus.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt other_common.cpp
+         other_common.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\project\AntiVirus2\Debug\LibAntiVirus.dll" /INCREMENTAL /NOLOGO /DEF:".\LibAntiVirus.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\project\AntiVirus2\Debug\LibAntiVirus.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\project\AntiVirus2\Debug\LibAntiVirus.lib" /MACHINE:X86 /DLL Debug\LibAntiVirus.res
+         Debug\gettimeofday.obj
+         Debug\LibAntiVirus.obj
+         Debug\other.obj
+         Debug\other_common.obj
+         Debug\stdafx.obj
+         LibAntiVirus.vcxproj -> D:\project\AntiVirus2\Debug\LibAntiVirus.dll
+       PostBuildEvent:
+         copy "D:\project\AntiVirus2\Debug\\LibAntiVirus.lib" "D:\project\AntiVirus2\\AntiVirus"
+         :VCEnd
+                 1개 파일이 복사되었습니다.
+     1>"D:\project\AntiVirus2\LibAntiVirus\LibAntiVirus.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:00.74
